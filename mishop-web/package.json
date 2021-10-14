@@ -1,0 +1,22 @@
+{
+  "name": "mishop-web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "vant": "^3.2.5",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.5",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/compiler-sfc": "^3.2.20",
+    "vite": "^2.6.4"
+
+  }
+}
