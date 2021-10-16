@@ -19,13 +19,14 @@
 <script>
 export default {
   name: "MainLayout",
+
   data() {
     return {
       active: 0
     }
   },
   created() {
-    console.log(this.$route.matched[0].children)
+    //console.log(this.$route.matched[0].children)
   },
   methods: {}
 

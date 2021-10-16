@@ -1,9 +1,5 @@
 <template>
-  <van-nav-bar left-arrow title="商品详情">、
-    <template #right>
-      <van-icon name="wap-home-o" size="18"/>
-    </template>
-  </van-nav-bar>
+  <NavBar />
   <div class="bcp img mb mt">
     <img alt="image"/>
     <div class="img-panel">1/10</div>
@@ -17,7 +13,9 @@
   </div>
 
     <van-cell class="mt" title="数量：">
-      <van-stepper v-model="value" max="999" min="1" />
+      <template #value>
+        <van-stepper v-model="value" max="999" min="1" />
+      </template>
     </van-cell>
 
   <div class="mt ">
@@ -44,8 +42,10 @@
 </template>
 
 <script>
+import NavBar from "../../components/NavBar.vue";
 export default {
   name: "product",
+  components:{NavBar},
   data() {
     return {
       info: {
@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tb {
 }
 

@@ -1,7 +1,6 @@
 <template>
-  <!--suppress HtmlUnknownTag -->
-  <van-nav-bar title="在线商城" />
-  <div class=" pan">轮播 TODO</div>
+  <NavBar title="Mini Shop" no-back />
+  <div class="pan">轮播 TODO</div>
   <div class="tool-bar pan">工具组 TODO</div>
   <div class="pan list" >
       列表
@@ -9,10 +8,10 @@
 
 </template>
 
-<script>
-export default {
-  name: "home"
-}
+<script setup>
+import NavBar from "../../components/NavBar.vue";
+
+
 </script>
 
 <style scoped>
@@ -20,7 +19,6 @@ export default {
   background-color: #fff;
   margin: 10px 0;
 }
-
 .tool-bar{
   height: 85px;
 }

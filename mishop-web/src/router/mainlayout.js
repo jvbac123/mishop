@@ -10,18 +10,18 @@ const main = {
 
         },
         {
-            path: "/b",
-            component: () => import('../views/vite.vue'),
+            path: "/category",
+            component: () => import('../views/home/category.vue'),
             icon:"cluster",
             title: "分类"
         },
         {
-            path: "/c", component: () => import('../components/HelloWorld.vue'),
+            path: "/cart", component: () => import('../views/home/cart.vue'),
             icon:"shopping-cart-o",
             title: "购物车"
         },
         {
-            path: "/d", component: () => import('../views/vite.vue'),
+            path: "/my", component: () => import('../views/home/my.vue'),
             icon:"manager-o",
             title: "我的"
         }
